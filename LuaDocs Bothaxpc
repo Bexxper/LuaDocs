@@ -1,0 +1,91 @@
+void RunThread(function callback) -- run function at thread
+void RunDelayed(function callback, int delayMS) -- run function after (delayMS) milliseconds
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int Choice(string[] choiceTitles [, string label])
+bool[] MultiChoice(string[] choiceTitles [, bool[] choiceStates][, string label])
+-- Choice/MultiChoice will return nil if "Cancel" pressed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Response MakeRequest(string url [, string method][, table options][, string post_fields][, int connection_time_out]) -- Response will be string if theres error, otherwise return struct Response
+ImGui API: Over 240 API. DrawList API not yet added
+ImVec2 ImVec2([float x][, float y])
+ImVec4 ImVec4([float x][, float y][, float z][, float w])
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void AddHook(string hook_name, key, function) -- Add hook with custom key
+void RemoveHook(key) -- Remove hook with key from database
+void RemoveHooks() -- Remove and disable all hooks
+
+Note: Dont call Hook function in thread mode! its unsafe
+
+Available hook
+onvariant: function(VariantList var, int netid) -- Hook client calls
+onsendpacket: function(int type, string text) --  Hook text packet sent to server
+onsendpacketraw: function(TankPacket packet, int flags) -- Hook TankPacket sent to server
+onprocesstankupdatepacket: function(TankPacket packet) -- Hook received raw packet from server
+onworldtouch: function(Vector2 pos, bool mouseDown) -- Hook world touch, you can block the touch by returning true
+ondraw: function() -- ImGui draw must be done there
+oninput: function(int key) -- Hook input key. Character are uppercase, view more key at https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int Hash32(string text [, uint32 seed]) -- Proton hashing returning 32byte int
+int Hash64(string text [, uint64 seed]) -- Proton hashing returning 64byte int
+
+void ChangeValue(string id, bool state) --  Change internal menu state
+void ChangeValue(string id, int value) -- Change internal variable value
+void ChangeValue(string id, float[] value) -- Change internal variable for color
+
+int GetAsyncKeyState(int key)
+int GetAsyncKeyState(char key)
+
+void AttachConsole() -- Enable std console
+void DetachConsole() -- Destroy std console
+
+string Encrypt(string text [, int key]) -- Encrypt text, default key = 0
+
+void LoadEncrypt(string text [, int key]) -- Load encrypted text, default key = 0
+
+void EncryptFile(string file_name [, int key]) -- Encrypt existing file from script list, output will be file_name + "_enc", default key = 0
+
+void LoadEncryptedFile(string file_name [, int key]) -- Load existing encrypted file, default key = 0
+
+bool, ... CallGlobalFunctionFromState(string state_name, string global_function_name, ...) -- Call global function from other state
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WorldCamera GetCamera()
+
+ENetClient GetClient()
+
+InventoryItem[] GetInventory() -- key: item id
+
+ItemInfo GetItemInfo(int id)
+ItemInfo GetItemInfo(string item_name)
+ItemInfo[] GetItemInfoList() -- key: item id
+
+NetAvatar GetLocal()
+
+ClientNPC GetNPC(int npc_id)
+ClientNPC[] GetNPCList() -- key: npc id
+
+WorldObject[] GetObjectList() -- key: object id
+
+NetAvatar GetPlayer(int netid)
+NetAvatar[] GetPlayerList() -- key: player netid
+
+PlayerInfo GetPlayerInfo()
+
+Tile GetTile(int tile_x, int tile_y)
+Tile[] GetTiles() -- key: tile index (0 - (tilecount - 1))
+
+World GetWorld()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Sleep(int ms) -- Sleep for milliseconds
+void LogToConsole(string text) -- Display text to Growtopia console
+
+void SendPacket(int type, string text) -- Send text packet to server
+void SendPacketRaw(TankPacket packet, bool client [, int flags]) -- Send TankPacket to server/client, default flags = 1
+void SendVariantList(VariantList varlist [, int netid][, int delay]) -- Call VariantList, default netid = -1, delay = 0
+void SendWorldTouch(Vector2 world_pos [, bool mousedown]) -- Send world touch
+void SendWorldTouch(float world_x, float world_y [, bool mousedown])
+ 
+void RequestJoinWorld(string world_name) -- Wrapper for join world (sending action|join_request)
+void SetItemSelected(int id) -- set backpack item selected
+
+bool FindPath(int x, int y [, int delay]) -- Find path, default delay = 20
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
