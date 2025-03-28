@@ -1,0 +1,238 @@
+struct ClientNPC
+{
+    int id
+    int type
+    Vector2 pos
+    Vector2 target
+}
+
+struct ENetClient
+{
+    string address
+    int port
+    int connectiontimer
+    int token
+    int user
+}
+
+struct InventoryItem
+{
+    int id
+    int amount
+    int flags
+}
+------------------------------------------------------------------------------------------------------------
+struct ItemInfo
+{
+    int id
+    string name
+    string filename
+    int rarity
+    int breakhit
+    int growtime
+    int type
+    int coltype
+    int clothingtype
+    int visualstyle
+}
+
+struct NetAvatar
+{
+    Vector2 pos
+    string name
+    bool isleft
+    int netid
+    int userid
+    string country
+    bool invisible
+    bool mstate
+    bool smstate
+}
+
+struct PlayerInfo
+{
+    int gems
+    float punchrange
+    float buildrange
+    struct
+    {
+        int[] priority -- index: 1 - 4
+        int selected
+        int size
+    } backpack
+}
+------------------------------------------------------------------------------------------------------------
+struct Tile
+{
+    int fg
+    int bg
+    bool collidable
+    int x
+    int y
+    int coltype
+    
+    struct
+    {
+        bool flipper
+        bool enabled
+        bool public
+        bool silenced
+        bool water
+        bool glue
+        bool burn
+        bool painted
+    } flags
+
+    -- this struct nil if the tile doesnt have any extra data
+    struct
+    {
+        int type
+        float progress -- only for seed/provider. otherwise nil
+        string label
+        int owner
+        int flags
+        int[] admin -- list of admin uid(s)
+        int lastupdate
+        int alttype
+        int growth
+        int fruitcount
+        int volume
+    } extra
+}
+
+struct World
+{
+    string name
+    int width
+    int height
+    int tilecount
+    int objectcount
+    int lastoid
+}
+
+struct WorldCamera
+{
+    Vector2 pos
+    Vector2 center
+    float center
+}
+
+Helper for calculate world to screen pos
+function WorldToScreen(w_camera, world_x, world_y)
+    return {
+        x = (world_x - w_camera.pos.x) * w_camera.scale,
+        y = (world_y - w_camera.pos.y) * w_camera.scale
+    }
+end
+
+struct WorldObject
+{
+    int id
+    Vector2 pos
+    int amount
+    int flags
+    int oid
+}
+VariantList is table with 7 index starting from 0. the function name is type string at index 0. the other 6 index is for parameters
+struct TankPacket
+{
+    int type
+    int dropped
+    union {
+        defailt: int value
+        int int_data
+    }
+    union {
+        default: int netid
+        int player_flags
+    }
+    union {
+        default: int snetid
+        int secondnetid
+    }
+    union {
+        default: int state
+        int characterstate
+    }
+    union {
+        default: int px
+        int tx
+        int int_x
+    }
+    union {
+        default: int py
+        int ty
+        int int_y
+    }
+    union {
+        default: float x
+        float pos_x
+    }
+    union {
+        default: float y
+        float pos_y
+    }
+    
+    float xspeed
+    float yspeed
+    int padding1
+    int padding2
+    float padding4
+    int padding5
+    int extrasize
+}
+
+in c++, TankPacket struct is
+struct TankPacketStruct
+{
+    uint8_t type;
+    uint8_t dropped;
+    uint8_t padding1;
+    uint8_t padding2;
+    int netid;
+    int snetid;
+    int state;
+    float padding4;
+    int value;
+    float x;
+    float y;
+    float xspeed;
+    float yspeed;
+    int padding5;
+    int px;
+    int py;
+    uint32_t extrasize;
+}
+struct Vector2
+{
+    float x
+    float y
+}
+
+struct Vector3
+{
+    float x
+    float y
+    float z
+}
+
+struct Rect
+{
+    float x
+    float y
+    float w
+    float h
+}
+ImVec2 same as Vector2
+struct ImVec4
+{
+    float x
+    float y
+    float z
+    float w
+}
+struct Response
+{
+    string content
+}
+------------------------------------------------------------------------------------------------------------
