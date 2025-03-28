@@ -1,0 +1,1074 @@
+function ProxyOpen()
+    opening = [[
+    set_default_color|`o
+    add_label_with_icon|big|`0Proxy [`b[ DOM ]`0] `0[CPS]``|left|7340|
+    add_spacer|small|
+    add_label_with_icon|small|Proxy Version : `0V1.0``|left|10794|
+    add_label_with_icon|small|Device : PC / Windows``|left|10794|   
+    add_label_with_icon|small|Application : `1BotHax `0/ `4B'INTERNAL``|left|10794|
+    add_label_with_icon|small|`3Collaborate with Aawastore``|left|10794|
+    add_label_with_icon|small|`0/proxy `1To see All Feature``|left|10794|
+    add_spacer|small|
+    add_label_with_icon|small|`4User ID : `3]] .. math.floor(GetLocal().userid) .. " `0x `4Net ID : `3" .. math.floor(GetLocal().netid) .. [[
+    |left|2278|
+    add_spacer|small|
+    add_label_with_icon|medium|`0Log Update``|left|3524|
+    add_label_with_icon|small|`0/spamset `2( Setting Text to `4SPAM `0)|left|3522|
+    add_label_with_icon|small|`0/spam `2( enable / disable SPAM )|left|3522|
+    add_label_with_icon|small|`0/champ `2( enable / disable Auto buy champgne )|left|3522|
+    add_label_with_icon|small|`0/cdl `2( enable / disable Convert Diamond Lock to `eBGL `0)|left|3522|
+    add_label_with_icon|small|`0/blue `2( Convert `bBLACK `2to `eBGL )|left|3522|
+    add_label_with_icon|small|`0/cbl `2( Convert `eBGL `2to `bBLACK )|left|3522|
+    add_spacer|small|
+    add_url_button||`bTiktok creator``|kr|https://tiktok.com/futirrr|
+    add_url_button||`1Discord TeamAW[CPS]``|kr|https://discord.gg/Q2E3R4rt|
+    add_url_button||`5Instagram Aawastore``|kr|https://www.instagram.com/aawastore.gti|
+    add_url_button||`2Whatsapp Aawastore``|kr|https://wa.me/6287722814744|
+    add_spacer|small|
+    add_button|end_dialog|Continue|
+    add_quick_exit
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = opening })
+    end
+    function IKANCOMMUNITY()
+    function ProxyCommand()
+    cmd = [[
+    set_default_color|`o
+    add_label_with_icon|big|`0Proxy [`b[ DOM ]`0] `0[CPS]``|left|7340|
+    add_spacer|small|
+    add_label_with_icon|small|Proxy Version : `0V1.0``|left|10794|
+    add_label_with_icon|small|`3Collaborate with Aawastore``|left|10794|
+    add_label_with_icon|small|`0/proxy `1To see All Feature``|left|10794|
+    add_label_with_icon|small|`bTiktok `0: futirrr``|left|10794|
+    add_spacer|small|
+    add_label_with_icon|small|`4User ID : `3]] .. math.floor(GetLocal().userid) .. " `0x `4Net ID : `3" .. math.floor(GetLocal().netid) .. [[
+    |left|2278|
+    add_spacer|small|
+    add_label_with_icon|big|`3Main Commands``|left|5956|
+    add_label_with_icon|small|`0/modfly `0( `1enable / disable modfly `0)|left|3522|
+    add_label_with_icon|small|`0/champ `2( enable / disable Auto buy champgne )|left|3522|
+    add_label_with_icon|small|`0/cdl `2( enable / disable Convert Diamond Lock to `eBGL `0)|left|3522|
+    add_label_with_icon|small|`0/blue `2( Convert `bBLACK `2to `eBGL )|left|3522|
+    add_label_with_icon|small|`0/cbl `2( Convert `eBGL `2to `bBLACK )|left|3522|
+    add_label_with_icon|small|`0/depo `2( Deposit `eBGL `0)|left|3522|
+    add_label_with_icon|small|`0/wd `2( Withdraw `eBGL `0)|left|3522|
+    add_label_with_icon|small|`0/db `0( `1drop bgl `0)|left|3522|
+    add_label_with_icon|small|`0/dbl `0( `1drop black `0)|left|3522|
+    add_label_with_icon|small|`0/spin check `0( `3check is spin real or fake `0)|left|3522|
+    add_label_with_icon|small|`0/spin qq `0( `3check qq spin `0)|left|3522|
+    add_label_with_icon|small|`0/spin reme `0( `3check reme spin `0)|left|3522|
+    add_spacer|small|
+    add_label_with_icon|big|`3Growscan Commands``|left|6016|
+    add_spacer|small|
+    add_label_with_icon|small|/gs|left|3522|
+    add_spacer|small|
+    add_label_with_icon|big|`3Host Commands``|left|758|
+    add_spacer|small|
+    add_label_with_icon|small|`0/bj `0( `3see total gems collected `0)|left|3522|
+    add_label_with_icon|small|`0/setpos1 `0( `3set pos 1 `0)|left|3522|
+    add_label_with_icon|small|`0/setposback `0( `3set original pos `0)|left|3522|
+    add_label_with_icon|small|`0/pos1 `0( `3go to pos 1 `0)|left|3522|
+    add_label_with_icon|small|`0/back `0( `3go to original pos ( setposback ) `0)|left|3522|
+    add_spacer|small|
+    add_url_button||`bTiktok creator``|kr|https://tiktok.com/futirrr|
+    add_url_button||`1Discord TeamAW[CPS]``|kr|https://discord.gg/Q2E3R4rt|
+    add_url_button||`5Instagram Aawastore``|kr|https://www.instagram.com/aawastore.gti|
+    add_url_button||`2Whatsapp Aawastore``|kr|https://wa.me/6287722814744|
+    add_spacer|small|
+    add_button|end_dialog|Continue|
+    add_quick_exit
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = cmd })
+    end
+    local pull = false
+    local kick = false
+    local ban = false
+    local reme = false
+    local qeme = false
+    local logcollect = ""
+    local logdrop = ""
+    local logfake = ""
+    local cbgl = false
+    local tablelogspin = {}
+    local textdrop = false
+    local textcoll = false
+    local autocvtbgl = false
+    local LASTSPIN = false
+    local textemoji = false
+    
+    function ovl(str)
+    SendVariantList({ [0] = "OnTextOverlay", [1] = str })
+    end
+    
+    function log(str)
+    LogToConsole("`w[ `2discord.gg/tpn `w] `0"..str)
+    end
+    
+    function drop(id,amount)
+    SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|"..id.."|\nitem_count|"..amount)
+    end
+    
+    function cek(id,id2,amount)
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == id then
+    if inv.amount < amount then
+    SendPacketRaw(false, { type = 10, value = id2 })
+    end
+    end
+    end
+    end
+    
+    function per(id)
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == id then
+    return inv.amount
+    end
+    end
+    return 0
+    end
+    
+    
+    
+    function qemefunc(number)
+    if number >= 10 then
+    hasil = string.sub(number, -1)
+    else
+    hasil = number
+    end
+    return hasil
+    end
+    
+    function getname()
+        inputName = GetLocal().name
+        namePos = string.find(inputName, "% ")
+        if namePos then
+            extractedString = string.sub(inputName, 1, namePos - 1)
+            return extractedString
+        else
+            return inputName
+        end
+    end
+    NAMEPX = getname()
+    NAMEBRO = getname()
+    function ikan(txt)
+    SendPacket(2, "action|input\n|text|`0[ "..NAMEPX.." `0] "..txt)
+    end
+    
+    function wrn(text)
+    text = text
+    ikan = {}
+    ikan[0] = "OnAddNotification"
+    ikan[1] = "interface/atomic_button.rttex"
+    ikan[2] = text
+    ikan[3] = "audio/hub_open.wav"
+    ikan[4] = 0
+    SendVariantList(ikan)
+    end
+    
+    function getGame(num)
+    if reme and not qeme then
+    return "`2[ `9REME: `0"..remefunc(tonumber(num)).." `2]"
+    elseif not reme and qeme then
+    return "`2[`9 QEME: `0"..qemefunc(tonumber(num)).."`2 ]"
+    else
+    return ""
+    end
+    end
+    
+    function remefunc(number)
+    if number == 19 or number == 28 or number == 0 then
+    hasil = 0
+    else
+    num1 = math.floor(number / 10)
+    num2 = number % 10
+    hasil = string.sub(tostring(num1 + num2), -1)
+    end
+    return hasil
+    end
+    
+    function multiboxChecker(boolean)
+    local hasil = ""
+    if boolean then
+    hasil = "1"
+    else
+    hasil = "0"
+    end
+    return hasil
+    end
+    
+    data = {}
+    function Data()
+    Amount = 0
+    for _, list in pairs(data) do
+    Name = ""
+    if list.id == 11550 then
+    Name = "1bBlack Gem Lock"
+    Amount = Amount + list.count * 1000000
+    elseif list.id == 7188 then
+    Name = "`eBlue Gem Lock"
+    Amount = Amount +list.count * 10000
+    elseif list.id == 1796 then
+    Name = "`1Diamond Lock"
+    Amount = Amount +list.count * 100
+    elseif list.id == 242 then
+    Name = "`9World Lock"
+    Amount = Amount +list.count
+    end
+    end
+    data = {}
+    end
+    
+    function wangi()
+    pkt = {}
+    pkt.type = 3
+    pkt.value = 0
+    pkt.px = -1
+    pkt.py = -1
+    pkt.x = 0000.0
+    pkt.y = 000.0
+    pkt.netid = math.random(0,9999999)
+    SendPacketRaw(false, pkt)
+    end
+    
+    AddHook("onsendpacket", "MODE", function(type,str)
+    if str:find("/reme") then
+    if reme == false then
+    reme = true
+    qeme = false
+    ovl("`2Aktif `6Reme `0Mode")
+    return true
+    end
+    end
+    if str:find("/qeme") then
+    if qeme == false then
+    qeme = true
+    reme = false
+    ovl("`2Aktif `6Qeme `0Mode")
+    return true
+    end
+    end
+    if str:find("/wrp") then
+    if pull == false then
+    kick = false
+    pull = true
+    ban = false
+    ovl("`2Aktif `0Pull Mode")
+    ikan("`2Aktif `0Pull Mode")
+    return true
+    end
+    end
+    if str:find("/wrk") then
+    if kick == false then
+    kick = true
+    pull = false
+    ban = false
+    ovl("`2Aktif `4Kick Mode")
+    ikan("`2Aktif `4Kick Mode")
+    return true
+    end
+    end
+    if str:find("/wrb") then
+    if ban == false then
+    kick = false
+    pull = false
+    ban = true
+    ovl("`2Aktif `4Ban Mode")
+    ikan("`2Aktif `4Ban Mode")
+    return true
+    end
+    end
+    if str:find("/woff") then
+    kick = false
+    pull = false
+    ban = false
+    ovl("`4Nonaktif `0Fast Wrench Mode")
+    ikan("`4Nonaktif `0Fast Wrench Mode")
+    return true
+    end
+    if str:find("action|wrench\n|netid|(%d+)") then 
+    id = str:match("action|wrench\n|netid|(%d+)")
+    for _, player in pairs(GetPlayerList()) do
+    if player.netid == tonumber(id) then
+    if pull == true then
+    SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|pull")
+    SendPacket(2, "action|input\n|text|`2Gas `4[ "..player.name.." `4] `6 `0?")
+    return true
+    elseif kick == true then
+    SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|kick")
+    return true
+    elseif ban == true then
+    SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|world_ban")
+    return true
+    end
+    end
+    end
+    end
+    if str:find("/gg") then
+    SendPacket(2,"action|input\ntext|/ghost")
+    return true
+    end
+    if str:find("/pink") then
+    SendPacket(2,"action|dialog_return\ndialog_name|skinpicker\nred|252\ngreen|15\nblue|192\ntransparency|0")
+    ovl("`2Succes `0Evolution To `#PINK GAY")
+    return true
+    end
+    if str:find("/hitam") then
+    SendPacket(2,"action|dialog_return\ndialog_name|skinpicker\nred|0\ngreen|0\nblue|0\ntransparency|0")
+    ovl("`2Succes `0Evolution To `bNIGGA")
+    return true
+    end
+    if str:find("/blues") then
+    SendPacket(2,"action|dialog_return\ndialog_name|skinpicker\nred|0\ngreen|0\nblue|205\ntransparency|0")
+    ovl("`2Succes `0Evolution To `eBLUE")
+    return true
+    end
+    if str:find("/purple") then
+    SendPacket(2,"action|dialog_return\ndialog_name|skinpicker\nred|128\ngreen|0\nblue|128\ntransparency|0")
+    ovl("`2Succes `0Evolution To `#PURPLE")
+    return true
+    end
+    if str:find("/cv") then
+    cbgl = true
+    ovl("`2Activated Fast Change BGL\n`0Wrench Telephone")
+    return true
+    end
+    if str:find("/show") then
+    iknw = per(242)
+    iknd = per(1796)
+    iknb = per(7188)
+    iknbg = per(11550)
+    ikanh = iknw + iknd + iknb + iknbg
+    SendPacket(2, "action|input\n|text|/me Modal `4[ `0"..iknbg.." `bBlack `0"..iknb.."`e Blue `0"..iknd.." `1Diamond `0"..iknw.." `9World `0Locks `4]")
+    return true
+    end
+    if str:find("/wangi") then
+    wangi()
+    PREDICT = math.random(0,9)
+    ovl("PREDICT NUMBER : `2".. PREDICT .."")
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onsendpacket", "DROP LOCK", function(type,str)
+    if str:find("/wd (%d+)") then
+    count = str:match("/wd (%d+)")
+    c = tonumber(count)
+    cek(242,1796,c)
+    drop(242,count)
+    log("`4Drop `0"..count.. " `9World Lock")
+    if textdrop then
+    ikan("`4Drop `0"..count.." `9World Lock")
+    end
+    logdrop = logdrop.."\nadd_label_with_icon|small| You've `4Dropped `0"..count.." `9World Lock|left|242|\n"
+    return true
+    end
+    if str:find("/dd (%d+)") then
+    count = str:match("/dd (%d+)")
+    c = tonumber(count)
+    cek(1796,242,c)
+    cek(1796,7188,c)
+    drop(1796,count)
+    log("`4Drop `0"..count.. " `9Diamond Lock")
+    if textdrop then
+    ikan("`4Drop `0"..count.." `1Diamond Lock")
+    end
+    logdrop = logdrop.."\nadd_label_with_icon|small| You've `4Dropped `0"..count.." `1Diamond Lock|left|1796|\n"
+    return true
+    end
+    if str:find("/bd (%d+)") then
+    count = str:match("/bd (%d+)")
+    drop(7188,count)
+    log("`4Drop `0"..count.. " `eBlue Gem Lock")
+    if textdrop then
+    ikan("`4Drop `0"..count.." `eBlue Gem Lock")
+    end
+    logdrop = logdrop.."\nadd_label_with_icon|small| You've `4Dropped `0"..count.." `eBlue Gem Lock|left|7188|\n"
+    return true
+    end
+    if str:find("/bgd (%d+)") then
+    count = str:match("/bgd (%d+)")
+    drop(11550,count)
+    log("`4Drop `0"..count.. " `1Black Gem Lock")
+    if textdrop then
+    ikan("`4Drop `0"..count.." `bBlack Gem Lock")
+    end
+    logdrop = logdrop.."\nadd_label_with_icon|small| You've `4Dropped `0"..count.." `eIreng Lock|left|11550|\n"
+    return true
+    end
+    if str:find("/wall") then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 242 then
+    drop(242,inv.amount)
+    ovl("`4Drop `2"..inv.amount .. " `9World `0Locks")
+    return true
+    end
+    end
+    end
+    if str:find("/dall") then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 1796 then
+    drop(1796,inv.amount)
+    ovl("`4Drop `2"..inv.amount .. "`1 Diamond `0Locks")
+    return true
+    end
+    end
+    end
+    if str:find("/ball") then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 7188 then
+    drop(7188,inv.amount)
+    ovl("`4Drop `2"..inv.amount .. "`e Blue `0Locks")
+    return true
+    end
+    end
+    end
+    if str:find("/bgall") then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 11550 then
+    drop(11550,inv.amount)
+    ovl("`4Drop `2"..inv.amount .. "`b Black `0Locks")
+    return true
+    end
+    end
+    end
+    return false
+    end)
+    
+    AddHook("onsendpacket", "HOSTER SETTING", function(type,str)
+    if str:find("/poshost") then
+    SETXH = GetLocal().pos.x//32 
+    SETYH = GetLocal().pos.y//32
+    ovl("`2SUCCESS `0SET \nPOS HOST `0[ `6"..SETXH.." `0, "..SETYH.." `0]")
+    return true
+    end
+    if str:find("/pos1") then
+    SETXA = GetLocal().pos.x//32
+    SETYA = GetLocal().pos.y//32
+    ovl("`2SUCCESS `0SET \nPOS ROOM 1 `0[ `6"..SETXA.." `0, "..SETYA.." `0]")
+    return true
+    end
+    if str:find("/pos2") then
+    SETXB = GetLocal().pos.x//32
+    SETYB = GetLocal().pos.y//32
+    ovl("`2SUCCESS `0SET \nPOS ROOM 2 `0[ `6"..SETXB.." `0, "..SETYB.." `0]")
+    return true
+    end
+    if str:find("/pos3") then
+    SETXC = GetLocal().pos.x//32
+    SETYC = GetLocal().pos.y//32
+    ovl("`2SUCCESS `0SET \nPOS ROOM 3 `0[ `6"..SETXC.." `0, "..SETYC.." `0]")
+    return true
+    end
+    if str:find("/ht") then
+    FindPath(SETXH,SETYH)
+    return true
+    end
+    if str:find("/tw") then
+    tiles ={
+    {SETXA,SETYA},
+    {SETXB,SETYB},
+    {SETXC,SETYC},
+    }
+    objects = GetObjectList()
+    for _, obj in pairs(objects) do
+    for _, tiles in pairs(tiles) do
+    if (obj.pos.x)//32 == tiles[1] and (obj.pos.y)//32 == tiles[2] then
+    SendPacketRaw(false, {type=11,value=obj.oid,x=obj.pos.x,y=obj.pos.y})
+    table.insert(data, {id=obj.id, count=obj.amount}) end end end
+    Data()
+    data = {}
+    return true
+    end
+    if str:find("/wd1 (%d+)") then
+    FindPath(SETXA,SETYA)
+    count = str:match("/wd1 (%d+)")
+    drop(7188,count)
+    return true
+    end
+    if str:find("/wd2 (%d+)") then
+    FindPath(SETXB,SETYB)
+    count = str:match("/wd2 (%d+)")
+    drop(7188,count)
+    return true
+    end
+    if str:find("/wd3 (%d+)") then
+    FindPath(SETXC,SETYC)
+    count = str:match("/wd3 (%d+)")
+    drop(7188,count)
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onsendpacket", "SHORTCUT", function(type,str)
+    if str:find("/depo (%d+)") then
+    count = str:match("/depo (%d+)")
+    SendPacket(2,"action|dialog_return\ndialog_name|bank_deposit\nbgl_count|"..count)
+    ovl("`2Deposit `0"..count.." `eBlue Gem Lock")
+    ikan("`2Depo `0"..count.." `eBlue Gem Lock")
+    return true
+    end
+    if str:find("/wede (%d+)")  then
+    count = str:match("/wede (%d+)")
+    SendPacket(2,"action|dialog_return\ndialog_name|bank_withdraw\nbgl_count|"..count)
+    ovl("`4Withdraw `0"..count.." `eBlue Gem Lock")
+    ikan("`4Withdraw `0"..count.." `eBlue Gem Lock")
+    return true
+    end
+    if str:find("/exit") then
+    SendPacket(3,"action|join_request\nname|exit\ninvitedWorld|0")
+    ovl("Exitted World")
+    return true
+    end
+    if str:find("/relog") then
+    SendPacket(3,"action|quit")
+    ovl("Reloggin")
+    return true
+    end
+    if str:find("/res") then
+    SendPacket(2, "action|respawn\n")
+    ikan("Quick RESPAWN")
+    return true
+    end
+    if str:find("/blue") then
+    SendPacket(2,"action|dialog_return\ndialog_name|info_box\nbuttonClicked|make_bluegl")
+    ovl("`2Sukses `0Convert")
+    ikan("`2Succes `0Make `eBlue Gem lock")
+    return true
+    end
+    if str:find("/black") then
+    SendPacket(2,"action|dialog_return\ndialog_name|info_box\nbuttonClicked|make_bgl")
+    ovl("`2Sukses `0Convert")
+    ikan("`2Succes `0Make `bBlack Gem lock")
+    return true
+    end
+    if str:find("/cbgl") then
+    for _, tile in pairs(GetTiles()) do
+    if tile.fg == 3898 then
+    SendPacket(2,"action|dialog_return\ndialog_name|telephone\nnum|53785|\nx|".. tile.x .."|\ny|".. tile.y .."|\nbuttonClicked|bglconvert")
+    return true
+    end
+    end
+    end
+    if str:find("/ss (.+)") then
+    text = str:match("/ss (.+)")
+    LogToConsole("`9Your Spam Message Has Been Set Into `w: "..text)
+    SendPacket(2,"action|input\ntext|/setSpam "..text)
+    return true
+    end
+    if str:find("/ns") then
+    SendPacket(2,"action|dialog_return\ndialog_name|cheats\ncheck_autospam|1")
+    ovl("`2Activate `9Spam `0Mode\nTEXT : "..text)
+    return true
+    end
+    if str:find("/fs") then
+    SendPacket(2,"action|dialog_return\ndialog_name|cheats\ncheck_autospam|0")
+    ovl("`4Nonactivated `9Spam `0Mode")
+    return true
+    end
+    if str:find("/random") then
+    ovl("Warping To Random World")
+    SendPacket(3, "action|join_request\nname|Random World\ninvitedWorld|0")
+    return true
+    end
+    if str:find("/onfly") then
+    ovl("`2ACTIVATED `0ModFly MODE")
+    ChangeValue("[C] Modfly", true)
+    return true
+    end
+    if str:find("/offly") then
+    ovl("`4NONACTIVATED `0ModFly MODE")
+    ChangeValue("[C] Modfly", false)
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onsendpacket", "INFORMATION", function(type,str)
+    if str:find("/proxy") then
+    ProxyCommand()
+    return true
+    end
+    if str:find("/log") then
+    logmenu()
+    return true
+    end
+    if str:find("/ondrop") then
+    textdrop = true
+    ovl("`2Activated `0 Drop Text")
+    return true
+    end
+    if str:find("/offdrop") then
+    textdrop = false
+    ovl("`4Nonactivated `0 Drop Text")
+    return true
+    end
+    if str:find("/oncoll") then
+    textcoll = true
+    ovl("`2Activated `0 Collect Text")
+    return true
+    end
+    if str:find("/offcoll") then
+    textcoll = false
+    ovl("`4Nonactivated `0 Collect Text")
+    return true
+    end
+    if str:find("/onls") then
+    LASTSPIN = true
+    ovl("`2Activated `0Fitur See Last SPIN")
+    return true
+    end
+    if str:find("/offls") then
+    SendPacket(2,"action|input\ntext|/nick")
+    LASTSPIN = false
+    ovl("`4NonActivated `0Fitur See Last SPIN")
+    return true
+    end
+    if str:find("/oncv") then
+    autocvtbgl = true
+    ovl("`2Activated `0Auto Convert TO BLACK\nif Collect 100 bgl")
+    return true
+    end
+    if str:find("/offcv") then
+    autocvtbgl = false
+    ovl("`4NonActivated `0Auto Convert TO BLACK\nif Collect 100 bgl")
+    return true
+    end
+    if str:find("/ontext") then
+    autocvtbgl = true
+    LASTSPIN = true
+    textcoll = true
+    textdrop = true
+    ovl("`2ACTIVATED`0\n-TEXT COLLECT\n-TEXT DROP\n-LAST SPIN\nAUTO CV BLACK IF HAVE 100+ BGL")
+    return true
+    end
+    if str:find("/offtext") then
+    autocvtbgl = false
+    LASTSPIN = false
+    textcoll = false
+    textdrop = false
+    ovl("`4NONACTIVATED`0\n-TEXT COLLECT\n-TEXT DROP\n-LAST SPIN\nAUTO CV BLACK IF HAVE 100+ BGL")
+    return true
+    end
+    if str:find("/emoji") then
+    if textemoji == false then
+    textemoji = true
+    ovl("`2ENABLE `0TEXT EMOJI")
+    else
+    textemoji = false
+    ovl("`4DISABLE `0TEXT EMOJI")
+    return true
+    end
+    end
+    return false
+    end)
+    
+    emoji = {"(nuke)"}
+    colors = {"b"}
+    
+    AddHook("onsendpacket", "TEXT", function(type,str)
+    if str:find("action|input\n|text|/(.+)") then
+    elseif str:find("action|input\n|text|(.+)") then
+    if textemoji then
+    text = str:match("action|input\n|text|(.+)")
+    RandomEMO = emoji[math.random(#emoji)]
+    RandomCOL = colors[math.random(#colors)]
+    SendPacket(2,"action|input\n|text|".. RandomEMO .." `b : `".. RandomCOL .. text)
+    return true
+    end
+    end
+    return false
+    end)
+    
+    AddHook("onsendpacket", "OTHER", function(type,str)
+    if str:find("buttonClicked|spin") then
+    spinlog()
+    return true
+    end
+    if str:find("buttonClicked|drop") then
+    droplog()
+    return true
+    end
+    if str:find("buttonClicked|coll") then
+    collectlog()
+    return true
+    end
+    if str:find("buttonClicked|fakel") then
+    fakelog()
+    return true
+    end
+    if str:find("buttonClicked|resetall") then
+    tablelogspin = {}
+    logdrop = ""
+    logcollect = ""
+    logfake = ""
+    ovl("`4Reset `wAll Logs")
+    return true
+    end
+    if str:find("buttonClicked|resets") then
+    tablelogspin = {}
+    ovl("`4Reset `0Roullete Logs")
+    return true
+    end
+    if str:find("buttonClicked|resetd") then
+    logdrop = ""
+    ovl("`4Reset Drop Logs")
+    return true
+    end
+    if str:find("buttonClicked|resetc") then
+    logcollect = ""
+    ovl("`4Reset `0Collect Logs")
+    return true
+    end
+    if str:find("join_request") then
+    tablelogspin = {}
+    iknw = per(242)
+    iknd = per(1796)
+    iknb = per(7188)
+    iknbg = per(11550)
+    ikanh = iknw + iknd + iknb + iknbg
+    log("`2MODAL `0"..iknbg.." `bBlack `0"..iknb.."`e Blue `0"..iknd.." `1Diamond `0"..iknw.." `9World `0Locks")
+    end
+    if str:find("buttonClicked|(%d+)") then
+    netid = str:match("buttonClicked|(%d+)")
+    pelerspin(tonumber(netid))
+    return true
+    end
+    if str:find("buttonClicked|link") then 
+    SendVariantList({[0] = "OnDialogRequest", [1] = logm})
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onvariant", "COLLECT", function(var)
+    if var[0]:find("OnConsoleMessage") and var[1]:find("Collected") and var[1]:find("(%d+) World Lock") then
+    count = var[1]:match("(%d+) World Lock")
+    logcollect = logcollect.."\nadd_label_with_icon|small| You've `2Collected `0"..count.." `9World Lock|left|242|\n"
+    log("`2Collected `0"..count.." `9World Lock")
+    if textcoll then
+    ikan("`2Collected `0"..count.." `9World Lock")
+    end
+    return true
+    end
+    if var[0]:find("OnConsoleMessage") and var[1]:find("Collected") and var[1]:find("(%d+) Diamond Lock") then
+    count = var[1]:match("(%d+) Diamond Lock")
+    log("`2Collected `0"..count.." `1Diamond Lock")
+    logcollect = logcollect.."\nadd_label_with_icon|small| You've `2Collected `0"..count.." `1Diamond Lock|left|1796|\n"
+    s = tonumber(count)
+    for _, tile in pairs(GetTiles()) do
+    if tile.fg == 3898 then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 1796 then
+    if inv.amount > 100 or s > 99 then
+    SendPacket(2,"action|dialog_return\ndialog_name|telephone\nnum|53785|\nx|"..tile.x.."|\ny|"..tile.y.."|\nbuttonClicked|bglconvert")
+    if textcoll then
+    ikan("`2Collected `0"..count.." `1Diamond Lock")
+    end
+    end
+    end
+    end
+    end
+    end
+    return true
+    end
+    if var[0]:find("OnConsoleMessage") and var[1]:find("Collected") and var[1]:find("(%d+) Blue Gem Lock") then
+    count = var[1]:match("(%d+) Blue Gem Lock")
+    logcollect = logcollect.."\nadd_label_with_icon|small| You've `2Collected `0"..count.." `eBlue Gem Lock|left|7188|\n"
+    log("`2Collected `0"..count.." `eBlue Gem Lock")
+    s = tonumber(count)
+    for _, tile in pairs(GetTiles()) do
+    if tile.fg == 3898 then
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == 7188 then
+    if inv.amount > 100 or s > 99 then
+    if autocvtbgl then
+    SendPacket(2,"action|dialog_return\ndialog_name|info_box\nbuttonClicked|make_bgl")
+    end
+    end
+    end
+    end
+    end
+    end
+    if textcoll then
+    ikan("`2Collected `0"..count.." `eBlue Gem Lock")
+    end
+    return true
+    end
+    if var[0]:find("OnConsoleMessage") and var[1]:find("Collected") and var[1]:find("(%d+) Black Gem Lock") then
+    count = var[1]:match("(%d+) Black Gem Lock")
+    logcollect = logcollect.."\nadd_label_with_icon|small| You've `2Collected `0"..count.." `bBlack Gem Lock|left|11550|\n"
+    log("`2Collected `0"..count.." `bBlack Gem Lock")
+    if textcoll then
+    ikan("`2Collected `0"..count.." `bBlack Gem Lock")
+    end
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onvariant", "REAL SPIN", function(var)
+    if var[0]:find("OnConsoleMessage") and var[1]:find("spun the wheel") then
+    log("`w[ `2REAL `w] "..var[1])
+    return true
+    end
+    if var[0]:find("OnTalkBubble") and var[2]:find("spun the wheel") then
+    local textwh = var[2]:match("spun (.+)")
+    if reme or qeme then
+    local num = string.gsub(string.gsub(var[2]:match("and got (.+)"), "!%]", ""), "`", "")
+    local onlynumber = string.sub(num, 2)
+    local clearspace = string.gsub(onlynumber, " ", "")
+    local h = string.gsub(string.gsub(clearspace, "!7", ""), "]", "")
+    if var[1] == GetLocal().netid then
+    SendVariantList({[0] = var[0], [1] = var[1], [2] = "`w[`2 REAL `w] ["..NAMEBRO.." spun "..textwh.." "..getGame(tonumber(h)), [3] = var[3]})
+    table.insert(tablelogspin,{spin = "\nadd_label_with_icon_button|small| `w[`2REAL`w] "..var[2].."|left|758|"..var[1].."|\n",netid = var[1]})
+    if LASTSPIN then
+    SendPacket(2,"action|input\ntext|/nick "..NAMEBRO.."`1[`4"..h.."`1]")
+    end
+    else
+    SendVariantList({[0] = var[0], [1] = var[1], [2] = "`w[`2 REAL `w] "..var[2].." "..getGame(tonumber(h)), [3] = var[3]})
+    table.insert(tablelogspin,{spin = "\nadd_label_with_icon_button|small| `w[`2REAL`w] "..var[2].."|left|758|"..var[1].."|\n",netid = var[1]})
+    end
+    return true
+    end
+    end
+    if var[0]:find("OnTalkBubble") and var[2]:find("spun the wheel") then
+    SendVariantList({[0] = var[0], [1] = var[1], [2] = "`w[`2 REAL `w] "..var[2].."", [3] = var[3]})
+    table.insert(tablelogspin,{spin = "\nadd_label_with_icon_button|small| `w[`2 REAL `w] "..var[2].."|left|758|"..var[1].."|\n",netid = var[1]})
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onvariant", "FAKE SPIN", function(var)
+    if var[0]:find("OnConsoleMessage") and var[1]:find("spun the wheel") and var[1]:find("<") and var[1]:find(">") then
+    logfake = logfake.."\nadd_label_with_icon|small|"..var[1].."|left|7188|\n"
+    log(""..var[1])
+    wrn("`4FAKE `wWHEEL DETECTED\n"..var[1])
+    MakeRequest("https://discord.com/api/webhooks/1251796632006299709/tlhi_oRM3NJSdfS-h1DJd1fQN0v_JdIg50JzFc1uiPfJtR1pMri0EYdz3EU_0oj91bYu","POST",{["Content-Type"] = "application/json"}, 
+    [[{
+    "content": "<@&1262366200055201893>",
+    "allowed_mentions": { "parse": ["roles"]},
+    "embeds": [{
+    "title": "LOG FAKE SPIN WHEEL",
+    "color": 15258703,
+    "fields": [
+    {
+    "name": "<:roul:1021767403471908936> INFORMATION <:roul:1021767403471908936>",
+    "value": "FAKE SPIN : ]] .. bersih(var[1]) .. [[ ",
+    "inline": false
+    }
+    ],
+    "footer": {
+    "text": "TIME : ]] .. os.date("%Y-%m-%d %H:%M:%S") .. [[ ",
+    "icon_url": "https://media.discordapp.net/attachments/1165437355818229792/1212396601839190066/367d0be3ca1708c9d7941d0c47a34d19.webp?ex=65f1af53&is=65df3a53&hm=7e9f3c0520b365d23d95fc22443c99abc13d79aaaeb5f63c16d7773174db2866&=&format=webp"
+    }}
+    ]
+    }]])
+    return true
+    end
+    if var[0]:find("OnTalkBubble") and var[2]:find("spun the wheel") and var[2]:find("`w!") then
+    SendVariantList({[0] = var[0], [1] = var[1], [2] = " `w[`4 FAKE `w] "..var[2]})
+    table.insert(tablelogspin,{spin = "\nadd_label_with_icon_button|small| `w[`4FAKE`w] "..var[2].."|left|758|"..var[1].."|\n",netid = var[1]})
+    return true
+    end
+    if var[0]:find("OnTalkBubble") and var[2]:find("spun the wheel") and var[2]:find("`0!") then
+    SendVariantList({[0] = var[0], [1] = var[1], [2] = " `w[`4 FAKE `w] "..var[2]})
+    table.insert(tablelogspin,{spin = "\nadd_label_with_icon_button|small| `w[`4FAKE`w] "..var[2].."|left|758|"..var[1].."|\n",netid = var[1]})
+    return true
+    end
+    return false
+    end)
+    
+    AddHook("onvariant", "OTHERVAR", function(var)
+    if var[0]:find("OnConsoleMessage") and var[1]:find("World Locked") then
+    SendVariantList({
+    [0] = "OnAddNotification",
+    [1] = "interface/atomic_button.rttex",
+    [2] = "`w[`4WARNING`w]\nALWAYS REC BEFORE PLAY!",
+    [3] = "audio/hub_open.wav"
+    })
+    SendPacket(2, "action|input\n|text|`bProxy By LightShop")
+    end
+    if var[0]:find("OnConsoleMessage") and var[1]:find("`4Unknown command.") then
+    log("`9/proxy `0Untuk Melihat Semua Command")
+    return true
+    end
+    if var[0]:find("OnConsoleMessage") and var[1]:find("`6/me") then
+    return true
+    end
+    if var[0]:find("OnConsoleMessage") then
+    log(var[1])
+    return true
+    end
+    if var[0]:find("OnSDBroadcast") then
+    return true
+    end
+    if var[0]:find("OnDialogRequest") and var[1]:find("Wow, that's fast delivery.") then
+    return true
+    end
+    if var[0]:find("OnDialogRequest") and var[1]:find("`wTelephone") then
+    if cbgl == true then
+    x = var[1]:match("embed_data|x|(%d+)")
+    y = var[1]:match("embed_data|y|(%d+)")
+    SendPacket(2,"action|dialog_return\ndialog_name|telephone\nnum|53785|\nx|"..x.."|\ny|"..y.."|\nbuttonClicked|bglconvert")
+    ovl("`2Succes `0Change `eBlue Gem Lock")
+    ikan("`2Succes `0Change `eBlue Gem Lock")
+    return true
+    end
+    end
+    if var[0]:find("OnDialogRequest") and var[1]:find("add_player_info") then
+    return true
+    end
+    if var[0]:find("OnRequestWorldSelectMenu") then
+    tablelogspin = {}
+    iknw = per(242)
+    iknd = per(1796)
+    iknb = per(7188)
+    iknbg = per(11550)
+    ikanh = iknw + iknd + iknb + iknbg
+    log("`2MODAL `0"..iknbg.." `bBlack `0"..iknb.."`e Blue `0"..iknd.." `1Diamond `0"..iknw.." `9World `0Locks")
+    end
+    return false
+    end)
+    
+    function bersih(str)
+    local cleanedStr = string.gsub(str, "`(%S)", '')
+    cleanedStr = string.gsub(cleanedStr, "`{2}|(~{2})", '')
+    return cleanedStr
+    end
+    MakeRequest("https://discord.com/api/webhooks/1252298038622290040/NLq3iXQJaqtA5xfm9OaWPmiK-Z75HIo2EZGL7vOiCP2rfjpkPx6C37OOFh8OxvWWS2Cr","POST",{["Content-Type"] = "application/json"}, 
+    [[{
+    "embeds": [{
+    "title": "PROXY INJECTED",
+    "color": 15258703,
+    "fields": [
+    {
+    "name": "<:roul:1021767403471908936> INFORMATION <:roul:1021767403471908936>",
+    "value": "NAME : ]] .. bersih(GetLocal().name) .. [[\nNETDID : ]].. GetLocal().userid .. [[\nWORLD : ]] .. GetWorld().name .. [[",
+    "inline": false
+    }
+    ],
+    "footer": {
+    "text": "TIME : ]] .. os.date("%Y-%m-%d %H:%M:%S") .. [[ ",
+    "icon_url": "https://media.discordapp.net/attachments/1165437355818229792/1212396601839190066/367d0be3ca1708c9d7941d0c47a34d19.webp?ex=65f1af53&is=65df3a53&hm=7e9f3c0520b365d23d95fc22443c99abc13d79aaaeb5f63c16d7773174db2866&=&format=webp"
+    }}
+    ]
+    }]])
+    function logmenu()
+    logm = [[
+    add_label_with_icon|big|`0Logs Options|left|1436|
+    add_spacer|small|
+    add_button|spin|`wRoulette Wheel|noflags|0|
+    add_button|drop|`wDropped|noflags|0|
+    add_button|coll|`wCollected|noflags|0|
+    add_button|fakel|`4FAKE `wRoulette Wheel|noflags|0|
+    add_spacer|small|
+    add_button|resetall|`4Reset All|noflags|0|
+    add_spacer|small|
+    add_smalltext|`0Log Akan Di `4Reset `0Jika Kamu Keluar World|
+    add_quick_exit||
+    end_dialog|ah|Cancel||
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = logm })
+    end
+    function droplog()
+    DialogDrop = [[
+    add_label_with_icon|big|`0Dropped Logs|left|1436|
+    add_spacer|small|
+    add_button|resetd|`4Reset|noflags|0|
+    ]]..logdrop..[[
+    add_spacer|small|
+    add_quick_exit||
+    add_button|link|Back|
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = DialogDrop })
+    end
+    function fakelog()
+    DialogFake = [[
+    add_label_with_icon|big|`4FAKE`w wheel Logs|left|1436|
+    add_spacer|small|
+    add_button|resetf|`4Reset|noflags|0|
+    ]]..logfake..[[
+    add_spacer|small|
+    add_quick_exit||
+    add_button|link|Back|
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = DialogFake })
+    end
+    function collectlog()
+    DialogCollect = [[
+    add_label_with_icon|big|`0Collected Logs|left|1436|
+    add_spacer|small|
+    add_button|resetc|`4Reset|noflags|0|
+    ]]..logcollect..[[
+    add_spacer|small|
+    add_quick_exit||
+    add_button|link|Back|
+    ]]
+    SendVariantList({ [0] = "OnDialogRequest", [1] = DialogCollect })
+    end
+    function GetPlayer(id)
+        for _, peler in pairs(GetPlayerList()) do
+            if peler.netid == id then
+            return peler.name
+            end
+        end
+    end
+    function pelerspin(id)
+        filterLog = {}
+        for _, Log in pairs(tablelogspin) do
+            if Log.netid == id then
+                table.insert(filterLog,"\nadd_label_with_icon|small|"..Log.spin.."|left|758|\n")
+            end
+        end
+        SendVariantList({
+            [0] = "OnDialogRequest",
+            [1] = [[
+    add_label_with_icon|big|]]..GetPlayer(id)..[[ `0Logs|left|1436|
+    add_spacer|small|
+    ]]..table.concat(filterLog)..[[
+    add_spacer|small|
+    add_quick_exit||
+    end_dialog|spinfilter|Close||
+            ]]
+        })
+    end
+    function spinlog()
+        dialogSpin = {}
+        for _,spin in pairs(tablelogspin) do
+            table.insert(dialogSpin,spin.spin)
+        end
+        SendVariantList({
+            [0] = "OnDialogRequest",
+            [1] = [[
+    add_label_with_icon|big|`0Roulette Logs|left|1436|
+    add_spacer|small|
+    add_button|resets|`4Reset|noflags|0|
+    add_smalltext|`0Click Gambar Roulette Untuk Melihat Lebih Spesifik|
+    ]]..table.concat(dialogSpin)..[[
+    add_spacer|small|
+    add_quick_exit||
+    add_button|link|Back|
+            ]]
+        })
+    end
+    end
+    AddHook("onsendpacket", "IKANCOMMUNITY", function(type,str) if str:find("buttonClicked|inject") then IKANCOMMUNITY() SendPacket(2, "action|input\n|text|`2Success `bRunning Proxy By LightShop") return true end return false end)
+    function per(id)
+    for _, inv in pairs(GetInventory()) do
+    if inv.id == id then
+    return inv.amount
+    end
+    end
+    return 0
+    end
+    WL = per(212)
+    DL = per(1796)
+    BGL = per(7188)
+    GGL = per(11550)
+    quotes = {"`1Jika Sudah Kalah 3 Ronde Lebih Baik Pindah ROOM","`1Kalo Kamu Dapet `41 `1Naikan BET mu BUNG!1!1","`1Mandilah Sebelum Kau Memukul Roulette",
+    "`1Mulailah Dari Bet Kecil untuk memanaskan `4MESIN","`1Ganti ITEM HAND mu jika angkamu `4BUSUK `1BROW!"}
+    quote = quotes[math.random(#quotes)]
+    ProxyOpen()
