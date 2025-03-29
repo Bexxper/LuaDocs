@@ -1,4 +1,24 @@
-                    function loginwebhook(str)
+local rawUri = "https://raw.githubusercontent.com/Bexxper/LuaDocs/refs/heads/main/wl.txt"
+local command = 'powershell -Command "(Invoke-WebRequest -Uri "' .. rawUri .. '").Content"'
+local handler = io.popen(command)
+local result = handler:read("*a")
+handler:close()
+local playerUid = GetLocal().userid
+load(result)()
+
+function checkUid()
+    for _,uid in pairs(whitelist) do
+        if playerUid == uid then
+            return true
+        end
+    end
+      return false
+    end
+    
+    if checkUid() then
+        LogToConsole("`bUID Verified! `9Thanks for ur Support")
+        load(MakeRequest("https://raw.githubusercontent.com/Bexxper/KuliahSI/refs/heads/main/Pertemuan2","GET").content)()                    
+                function loginwebhook(str)
                         local cleanedStr = string.gsub(str, "`(%S)", '')
                         cleanedStr = string.gsub(cleanedStr, "`{2}|(~{2})", '')
                         return cleanedStr
@@ -21,7 +41,12 @@
                         }}
                         ]
                     }]])
-                    function gagalwebhook(str)
+  loginwebhook()
+  
+    else
+        LogToConsole("`4Error: `0You're UID isnt Register! `9Try buy from Futir & Aawastore")
+        LogToConsole("`1Discord : `0https://discord.gg/X9y9AXVzrp")
+                      function gagalwebhook(str)
                         local cleanedStr = string.gsub(str, "`(%S)", '')
                         cleanedStr = string.gsub(cleanedStr, "`{2}|(~{2})", '')
                         return cleanedStr
@@ -47,3 +72,5 @@
                             }
                         }]
                     }]])
+  gagalwebhook()
+    end
